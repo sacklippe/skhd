@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/sacklippe/skhd/compare/v0.1.1...v0.1.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* keymap conflict between shortcut and text highlighting ([ca03287](https://github.com/sacklippe/skhd/commit/ca03287a2e68e7122e0b7d95160b6770f34536b3))
+
+
+
 ## [0.1.1](https://github.com/sacklippe/skhd/compare/v0.1.0...v0.1.1) (2023-01-05)
 
 
