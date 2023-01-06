@@ -35,7 +35,7 @@ cmd + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # float / unfloat window and center on screen
 cmd + alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
+          yabai -m window --grid 4:4:1:1:2:
 
 # toggle window split type
 cmd + alt - e : yabai -m window --toggle split
@@ -43,14 +43,14 @@ cmd + alt - e : yabai -m window --toggle split
 # balance size of windows
 shift + cmd - 0 : yabai -m space --balance
 
-# make floating window fill screen
-shift + cmd - up     : yabai -m window --grid 1:1:0:0:1:1
-
-# make floating window fill left-half of screen
-shift + cmd - left   : yabai -m window --grid 1:2:0:0:1:1
-
-# make floating window fill right-half of screen
-shift + cmd - right  : yabai -m window --grid 1:2:1:0:1:1
+# # make floating window fill screen
+# shift + cmd - up     : yabai -m window --grid 1:1:0:0:1:1
+# 
+# # make floating window fill left-half of screen
+# shift + cmd - left   : yabai -m window --grid 1:2:0:0:1:1
+# 
+# # make floating window fill right-half of screen
+# shift + cmd - right  : yabai -m window --grid 1:2:1:0:1:1
 
 # move window and focus desktop
 shift + cmd - 1 : yabai -m window --space 1; yabai -m space --focus 1
@@ -64,15 +64,15 @@ shift + cmd - 8 : yabai -m window --space 8; yabai -m space --focus 8
 shift + cmd - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
 
-## create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-#shift + cmd - n : yabai -m space --create && \
-#                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
-#                   yabai -m window --space "${index}" && \
-#                   yabai -m space --focus "${index}"
-#
-## fast focus desktop
-#cmd - tab : yabai -m space --focus recent
-#
-# send window to monitor and follow focus
-#shift + cmd - n : yabai -m window --display next; yabai -m display --focus next
-#shift + cmd - p : yabai -m window --display previous; yabai -m display --focus previous
+# # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
+# shift + cmd - n : yabai -m space --create && \
+#                    index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
+#                    yabai -m window --space "${index}" && \
+#                    yabai -m space --focus "${index}"
+# 
+# # fast focus desktop
+# cmd - tab : yabai -m space --focus recent
+# 
+#  send window to monitor and follow focus
+# shift + cmd - n : yabai -m window --display next; yabai -m display --focus next
+# shift + cmd - p : yabai -m window --display previous; yabai -m display --focus previous
