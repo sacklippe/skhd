@@ -1,4 +1,4 @@
-# nvim
+# skhd
 
 This is my personal `skhd` setup. To setup your `skhd` with these settings execute:
 
